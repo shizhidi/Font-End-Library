@@ -1,0 +1,121 @@
+@import "./layout.scss";
+
+@mixin btn($size:14px,$color:#fff,$bgcolor:#F04752,$padding:5px,$radius:5px) {
+  padding: $padding;
+  background-color: $bgcolor;
+  border-radius: $radius;
+  border: 1px solid $bgcolor;
+  font-size: $size;
+  color: $color;
+  text-align: center;
+  line-height: 1;
+  display: inline-block;
+}
+
+@mixin list($direction:column) {
+  @include flex($direction);
+}
+
+@mixin panel($bgcolor:#fff,$padding:0,$margin:0,$height:50px,$txtPadding:0 16px,$color:#333,$fontSize:16px) {
+  background: $bgcolor;
+  padding: $padding;
+  margin: $margin;
+  >h4{
+    height: $height;
+    line-height: $height;
+    padding: $txtPadding;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    color: $color;
+    font-size: $fontSize
+  }
+}
+
+@mixin no-bullets {
+  list-style: none;
+  li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0px;
+  }
+}
+
+@mixin vertical-center() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//-----------------------------------圆角-----------------------------------------  
+//radius:圆角  
+//例子：@include radius(24,100%);  
+@mixin radius($num:1234, $size: 5px) {  
+  @if $num==1234 {  
+      -webkit-border-radius: $size; //Saf3+, Chrome  
+      -moz-border-radius: $size; //FF1+  
+      border-radius: $size; //Opera 10.5, IE 9  
+      -ms-border-radius: $size;  
+  }  
+  @if $num==12 {  
+      -webkit-border-top-left-radius: $size;  
+      border-top-left-radius: $size;  
+      -webkit-border-top-right-radius: $size;  
+      border-top-right-radius: $size;  
+      -moz-border-top-left-radius: $size;  
+      -ms-border-top-left-radius: $size;  
+      -moz-border-top-right-radius: $size;  
+      -ms-border-top-right-radius: $size;  
+  }  
+  @if $num==23 {  
+      -webkit-border-top-right-radius: $size;  
+      border-top-right-radius: $size;  
+      -webkit-border-bottom-right-radius: $size;  
+      border-bottom-right-radius: $size;  
+      -moz-border-top-right-radius: $size;  
+      -moz-border-bottom-right-radius: $size;  
+      -ms-border-top-right-radius: $size;  
+      -ms-border-bottom-right-radius: $size;  
+  }  
+  @if $num==34 {  
+      -webkit-border-bottom-right-radius: $size;  
+      border-bottom-right-radius: $size;  
+      -webkit-border-bottom-left-radius: $size;  
+      border-bottom-left-radius: $size;  
+      -moz-border-bottom-left-radius: $size;  
+      -moz-border-bottom-right-radius: $size;  
+      -ms-border-bottom-left-radius: $size;  
+      -ms-border-bottom-right-radius: $size;  
+  }  
+  @if $num==14 {  
+      -webkit-border-top-left-radius: $size;  
+      border-top-left-radius: $size;  
+      -webkit-border-bottom-left-radius: $size;  
+      border-bottom-left-radius: $size;  
+      -moz-border-top-left-radius: $size;  
+      -moz-border-bottom-left-radius: $size;  
+      -ms-border-top-left-radius: $size;  
+      -ms-border-bottom-left-radius: $size;  
+  }  
+  @if $num==13 {  
+      -webkit-border-top-left-radius: $size;  
+      -webkit-border-bottom-right-radius: $size;  
+      -ms-border-top-left-radius: $size;  
+      -ms-border-bottom-right-radius: $size;  
+      border-top-left-radiu: $size;  
+      -moz-border-top-left-radius: $size;  
+      border-bottom-right-radiu: $size;  
+      -moz-border-bottom-right-radius: $size;  
+  }  
+  @if $num==24 {  
+      -webkit-border-top-right-radius: $size;  
+      border-top-right-radius: $size;  
+      -webkit-border-bottom-left-radius: $size;  
+      border-bottom-left-radius: $size;  
+      -moz-border-top-right-radius: $size;  
+      -moz-border-bottom-left-radius: $size;  
+      -ms-border-top-right-radius: $size;  
+      -ms-border-bottom-left-radius: $size;  
+  }  
+}  
