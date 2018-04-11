@@ -70,8 +70,7 @@ nuxt.js-library/
    │
    │──middleware/                * Nuxt.js 中间件
    |
-   │
-   ├──layouts/                   * Nuxt.js布局模板，默认default，目前不可更改，error为渲染失败模板
+   ├──layouts/                   * Nuxt.js布局模板，默认default，error为渲染失败模板
    |
    ├──pages/                     * Nuxt.js的页面文件
    │
