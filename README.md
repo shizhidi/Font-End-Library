@@ -44,7 +44,7 @@ $ npm start
 - ~~添加viewport.js 适配移动端 rem 布局方案 动态修改html font-size~~
 - ~~基于vue-awesome-swiper 完成轮播组件~~
 - ~~添加vue-svg-icon 使用svg图标方案~~
-- 前端库栏目样式
+- ~~前端库栏目样式~~
 - 大家在用栏目样式
 - 主题栏目样式
 - 场景栏目样式
