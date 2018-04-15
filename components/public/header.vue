@@ -6,7 +6,7 @@
    <nav :class="$style.left">
      <nuxt-link to="/library">前端库</nuxt-link>
      <nuxt-link to="/ouruse">我们在用</nuxt-link>
-     <nuxt-link to="/about">专题</nuxt-link>
+     <nuxt-link to="/subject">专题</nuxt-link>
      <nuxt-link to="/about">开发场景</nuxt-link>
      <nuxt-link to="/about">前端资讯</nuxt-link>
      <nuxt-link to="/about">新版发布</nuxt-link>
