@@ -4,13 +4,13 @@
      <nuxt-link to="/">nodecall</nuxt-link>
    </h1>
    <nav :class="$style.left">
-     <nuxt-link to="/library">前端库</nuxt-link>
+     <nuxt-link to="/library/applications/frameworks">前端库</nuxt-link>
      <nuxt-link to="/ouruse">我们在用</nuxt-link>
      <nuxt-link to="/subject">专题</nuxt-link>
      <nuxt-link to="/about">开发场景</nuxt-link>
-     <nuxt-link to="/about">前端资讯</nuxt-link>
-     <nuxt-link to="/about">新版发布</nuxt-link>
-     <nuxt-link to="/about">前端TOP100</nuxt-link>     
+     <!-- <nuxt-link to="/about">情报局</nuxt-link>
+     <nuxt-link to="/about">新版发布</nuxt-link> -->
+     <nuxt-link to="/about">前端TOP50</nuxt-link>
    </nav>
    <div :class="$style.searchFather">
       <input :class="$style.searchText" type="text" placeholder="搜索前端库">

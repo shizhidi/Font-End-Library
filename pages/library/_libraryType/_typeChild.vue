@@ -113,17 +113,17 @@
         </div>
         <ul :class="$style.librayList">
             <li>
-                <nuxt-link to="/"><img src="https://awesomes.oss-cn-beijing.aliyuncs.com/repo/151011005628-65-1.jpg?x-oss-process=style/subject_repo" alt=""></nuxt-link>
+                <nuxt-link to="/libraryOne/facebook/react"><img src="https://awesomes.oss-cn-beijing.aliyuncs.com/repo/151011005628-65-1.jpg?x-oss-process=style/subject_repo" alt=""></nuxt-link>
                 <span>
                 <h4><nuxt-link to="/">react</nuxt-link></h4>
                 <p :class="$style.librayList_des">Facebook 推出的一款声明式的，高效的，灵活的用于创建用户界面的JavaScript 库</p>
                 <p :class="$style.librayList_button">
-                    <nuxt-link to="/" :class="$style.librayList_button_left" title="在用"><icon name="users" :scale="3"></icon><span>83</span></nuxt-link>
+                <nuxt-link to="/" :class="$style.librayList_button_left" title="在用"><icon name="users" :scale="3"></icon><span>83</span></nuxt-link>
                 <nuxt-link to="/" :class="$style.librayList_button_right" title="喜欢">
                     <icon name="heart" :scale="3"></icon><span>83</span></nuxt-link>
                 </p>
                 </span>
-                <i>100</i>
+                <nuxt-link to="/score" :class="$style.score">100</nuxt-link>
             </li>
             <li>
                 <nuxt-link to="/"><img src="https://awesomes.oss-cn-beijing.aliyuncs.com/repo/151011135942-0-1.jpg?x-oss-process=style/subject_repo" alt=""></nuxt-link>
@@ -136,7 +136,7 @@
                     <icon name="heart" :scale="3"></icon><span>83</span></nuxt-link>
                 </p>
                 </span>
-                <i>100</i>
+                <nuxt-link to="/score" :class="$style.score">100</nuxt-link>
             </li>
             <li>
                 <nuxt-link to="/"><img src="https://awesomes.oss-cn-beijing.aliyuncs.com/repo/151007151721-11-1.png?x-oss-process=style/subject_repo" alt=""></nuxt-link>
@@ -149,7 +149,7 @@
                     <icon name="heart" :scale="3"></icon><span>83</span></nuxt-link>
                 </p>
                 </span>
-                <i>100</i>
+                <nuxt-link to="/score" :class="$style.score">100</nuxt-link>
             </li>
         </ul>
     </div>
@@ -317,7 +317,7 @@ export default {
                         }
                     }
                 }
-                >i {
+                > .score {
                     width: 26px;
                     height: 26px;
                     border-radius: 26px;

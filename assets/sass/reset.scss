@@ -68,7 +68,7 @@ i {
     font-style: normal;
     font-size: 100%;
     font-family: inherit;
-    vertical-align: baseline
+    vertical-align: baseline;
 }
 
 body {
@@ -120,9 +120,6 @@ hr {
 
 a {
     color: #444;
-    &:hover {
-      color: #DA552F;
-    }
     text-decoration: none;
     transition: all .5s ease-in .1s;
 }

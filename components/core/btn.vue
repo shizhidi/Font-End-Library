@@ -1,12 +1,16 @@
 <template lang="html">
-    <div :class="[btnClass,cname]">
+    <nuxt-link :to="path" :class="[btnClass,cname]">
         <slot/>
-    </div>
+    </nuxt-link>
 </template>
 
 <script>
 export default {
   props: {
+    path: {
+      type: String,
+      default: '/'
+    },
     cname: {
       type: String,
       default: ''

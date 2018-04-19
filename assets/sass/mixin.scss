@@ -1,10 +1,10 @@
 @import "./layout.scss";
 
-@mixin btn($size:14px,$color:#fff,$bgcolor:#F04752,$padding:5px,$radius:0px) {
+@mixin btn($size:14px,$color:#fff,$bgcolor:#F04752,$padding:6px 10px,$radius:3px) {
   padding: $padding;
   background-color: $bgcolor;
   border-radius: $radius;
-  border: 1px solid $bgcolor;
+  // border: 1px solid $bgcolor;
   font-size: $size;
   color: $color;
   text-align: center;
@@ -48,74 +48,74 @@
   transform: translateY(-50%);
 }
 
-//-----------------------------------圆角-----------------------------------------  
-//radius:圆角  
-//例子：@include radius(24,100%);  
-@mixin radius($num:1234, $size: 5px) {  
-  @if $num==1234 {  
-      -webkit-border-radius: $size; //Saf3+, Chrome  
-      -moz-border-radius: $size; //FF1+  
-      border-radius: $size; //Opera 10.5, IE 9  
-      -ms-border-radius: $size;  
-  }  
-  @if $num==12 {  
-      -webkit-border-top-left-radius: $size;  
-      border-top-left-radius: $size;  
-      -webkit-border-top-right-radius: $size;  
-      border-top-right-radius: $size;  
-      -moz-border-top-left-radius: $size;  
-      -ms-border-top-left-radius: $size;  
-      -moz-border-top-right-radius: $size;  
-      -ms-border-top-right-radius: $size;  
-  }  
-  @if $num==23 {  
-      -webkit-border-top-right-radius: $size;  
-      border-top-right-radius: $size;  
-      -webkit-border-bottom-right-radius: $size;  
-      border-bottom-right-radius: $size;  
-      -moz-border-top-right-radius: $size;  
-      -moz-border-bottom-right-radius: $size;  
-      -ms-border-top-right-radius: $size;  
-      -ms-border-bottom-right-radius: $size;  
-  }  
-  @if $num==34 {  
-      -webkit-border-bottom-right-radius: $size;  
-      border-bottom-right-radius: $size;  
-      -webkit-border-bottom-left-radius: $size;  
-      border-bottom-left-radius: $size;  
-      -moz-border-bottom-left-radius: $size;  
-      -moz-border-bottom-right-radius: $size;  
-      -ms-border-bottom-left-radius: $size;  
-      -ms-border-bottom-right-radius: $size;  
-  }  
-  @if $num==14 {  
-      -webkit-border-top-left-radius: $size;  
-      border-top-left-radius: $size;  
-      -webkit-border-bottom-left-radius: $size;  
-      border-bottom-left-radius: $size;  
-      -moz-border-top-left-radius: $size;  
-      -moz-border-bottom-left-radius: $size;  
-      -ms-border-top-left-radius: $size;  
-      -ms-border-bottom-left-radius: $size;  
-  }  
-  @if $num==13 {  
-      -webkit-border-top-left-radius: $size;  
-      -webkit-border-bottom-right-radius: $size;  
-      -ms-border-top-left-radius: $size;  
-      -ms-border-bottom-right-radius: $size;  
-      border-top-left-radiu: $size;  
-      -moz-border-top-left-radius: $size;  
-      border-bottom-right-radiu: $size;  
-      -moz-border-bottom-right-radius: $size;  
-  }  
-  @if $num==24 {  
-      -webkit-border-top-right-radius: $size;  
-      border-top-right-radius: $size;  
-      -webkit-border-bottom-left-radius: $size;  
-      border-bottom-left-radius: $size;  
-      -moz-border-top-right-radius: $size;  
-      -moz-border-bottom-left-radius: $size;  
-      -ms-border-top-right-radius: $size;  
-      -ms-border-bottom-left-radius: $size;  
-  }  
-}  
+//-----------------------------------圆角-----------------------------------------
+//radius:圆角
+//例子：@include radius(24,100%);
+@mixin radius($num:1234, $size: 5px) {
+  @if $num==1234 {
+      -webkit-border-radius: $size; //Saf3+, Chrome
+      -moz-border-radius: $size; //FF1+
+      border-radius: $size; //Opera 10.5, IE 9
+      -ms-border-radius: $size;
+  }
+  @if $num==12 {
+      -webkit-border-top-left-radius: $size;
+      border-top-left-radius: $size;
+      -webkit-border-top-right-radius: $size;
+      border-top-right-radius: $size;
+      -moz-border-top-left-radius: $size;
+      -ms-border-top-left-radius: $size;
+      -moz-border-top-right-radius: $size;
+      -ms-border-top-right-radius: $size;
+  }
+  @if $num==23 {
+      -webkit-border-top-right-radius: $size;
+      border-top-right-radius: $size;
+      -webkit-border-bottom-right-radius: $size;
+      border-bottom-right-radius: $size;
+      -moz-border-top-right-radius: $size;
+      -moz-border-bottom-right-radius: $size;
+      -ms-border-top-right-radius: $size;
+      -ms-border-bottom-right-radius: $size;
+  }
+  @if $num==34 {
+      -webkit-border-bottom-right-radius: $size;
+      border-bottom-right-radius: $size;
+      -webkit-border-bottom-left-radius: $size;
+      border-bottom-left-radius: $size;
+      -moz-border-bottom-left-radius: $size;
+      -moz-border-bottom-right-radius: $size;
+      -ms-border-bottom-left-radius: $size;
+      -ms-border-bottom-right-radius: $size;
+  }
+  @if $num==14 {
+      -webkit-border-top-left-radius: $size;
+      border-top-left-radius: $size;
+      -webkit-border-bottom-left-radius: $size;
+      border-bottom-left-radius: $size;
+      -moz-border-top-left-radius: $size;
+      -moz-border-bottom-left-radius: $size;
+      -ms-border-top-left-radius: $size;
+      -ms-border-bottom-left-radius: $size;
+  }
+  @if $num==13 {
+      -webkit-border-top-left-radius: $size;
+      -webkit-border-bottom-right-radius: $size;
+      -ms-border-top-left-radius: $size;
+      -ms-border-bottom-right-radius: $size;
+      border-top-left-radiu: $size;
+      -moz-border-top-left-radius: $size;
+      border-bottom-right-radiu: $size;
+      -moz-border-bottom-right-radius: $size;
+  }
+  @if $num==24 {
+      -webkit-border-top-right-radius: $size;
+      border-top-right-radius: $size;
+      -webkit-border-bottom-left-radius: $size;
+      border-bottom-left-radius: $size;
+      -moz-border-top-right-radius: $size;
+      -moz-border-bottom-left-radius: $size;
+      -ms-border-top-right-radius: $size;
+      -ms-border-bottom-left-radius: $size;
+  }
+}
