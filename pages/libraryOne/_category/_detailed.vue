@@ -52,8 +52,28 @@
                   <h5>评论区</h5>
                   <p><input type="text" placeholder="我们会认真对待你的想法、建议和反馈"> <Btn :path="GitHub" :class="$style.content_comment_submit"><icon name="submit" :scale="3"></icon><span>提交</span></Btn></p>
                   <ul>
-                    <li></li>
-                    <li></li>
+                    <li>
+                      <nuxt-link to="/score"><img src="https://awesomes.oss-cn-beijing.aliyuncs.com/mem/1506020404747-2657-1687.png?x-oss-process=style/repo-50" alt=""></nuxt-link>
+                      <div>
+                         <h5><nuxt-link to="/score">HouXingYi</nuxt-link><span>3月前</span></h5>
+                         <p :class="$style.content_comment_user">user interface不应该是“用户界面”吗</p>
+                         <p :class="$style.content_comment_btn">
+                           <Btn :class="$style.praise"><icon name="submit" :scale="3"></icon><span>0</span></Btn>
+                           <Btn :class="$style.answer"><icon name="submit" :scale="3"></icon><span>回复</span></Btn>
+                         </p>
+                      </div>
+                    </li>
+                    <li>
+                      <nuxt-link to="/score"><img src="https://awesomes.oss-cn-beijing.aliyuncs.com/mem/1506020404747-2657-1687.png?x-oss-process=style/repo-50" alt=""></nuxt-link>
+                      <div>
+                         <h5><nuxt-link to="/score">HouXingYi</nuxt-link><span>3月前</span></h5>
+                         <p :class="$style.content_comment_user">user interface不应该是“用户界面”吗</p>
+                         <p :class="$style.content_comment_btn">
+                           <Btn :class="$style.praise"><icon name="submit" :scale="3"></icon><span>0</span></Btn>
+                           <Btn :class="$style.answer"><icon name="submit" :scale="3"></icon><span>回复</span></Btn>
+                         </p>
+                      </div>
+                    </li>
                   </ul>
               </div>
             </main>
@@ -129,12 +149,13 @@ export default {
 			height: 50px;
 			line-height: 50px;
 			span {
+        font-size: 30px;
         @include vertical-center();
         font-weight: bold;
 			}
 			a {
 				position: absolute;
-				margin-left: 80px;
+				margin-left: 74px;
 				height: 50px;
 				svg {
 					@include vertical-center();
@@ -217,7 +238,7 @@ export default {
       width: 720px;
       margin-right: 30px;
       float: left;
-      div {
+      .content_article {
         height: 760px;
         background-color: white;
       }
@@ -227,7 +248,7 @@ export default {
         padding: 30px;
         box-sizing: border-box;
         background-color: #fff;
-        h5 {
+        > h5 {
             font-size: 16px;
             font-weight: bold;
             padding-bottom: 20px;
@@ -274,11 +295,11 @@ export default {
         }
       }
       .content_comment {
-        margin-top: 20px;
+        margin: 20px 0 50px 0;
         padding: 30px;
         box-sizing: border-box;
         background-color: white;
-        h5 {
+        > h5 {
           font-size: 16px;
           font-weight: bold;
           padding-bottom: 20px;
@@ -305,6 +326,64 @@ export default {
               display: inline-block;
               padding-left: 4px;
               vertical-align: middle;
+            }
+          }
+        }
+        ul {
+          margin-top: 40px;
+          li {
+            height: 100px;
+            position: relative;
+            font-size: 13px;
+            margin-bottom: 14px;
+            > a {
+              display: inline-block;
+              position: absolute;
+              top: 2px;
+              img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+              }
+            }
+            > div {
+              padding-left: 36px;
+              display: inline-block;
+              > h5 {
+                a {
+                  font-size: 13px;
+                  font-weight: bold;
+                  padding-right: 12px;
+                }
+                span {
+                  font-size: 13px;
+                  color: #B2B2C7;
+                }
+              }
+              .content_comment_user, .content_comment_btn {
+                svg {
+                  vertical-align: middle;
+                }
+                span {
+                  padding-left: 2px;
+                  vertical-align: middle;
+                }
+              }
+              .content_comment_user {
+                padding: 14px 0;
+              }
+              .content_comment_btn {
+                .praise {
+                  margin-right: 12px;
+                  color: #8a8a8a;
+                  background-color: #F5F5F5;
+
+                }
+                .answer {
+                  color: #d2d2d2;
+                  background-color: #fff;
+                }
+              }
             }
           }
         }

@@ -47,7 +47,7 @@ module.exports = {
     }
   },
   plugins: [
-    {src: '~plugins/viewport.js', ssr: false},
+    // {src: '~plugins/viewport.js', ssr: false},
     {src: '~plugins/vue-svg-icon.js'},
     {src: '~plugins/vue-awesome-swiper.js', ssr: false}
   ],
