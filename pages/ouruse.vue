@@ -3,7 +3,7 @@
     <div :class="$style.container_top">
         <h3>我们在用</h3>
         <p>参考大家在使用的框架，给自己的选择提供一个很好的参考</p>
-        <nuxt-link to="/">我要分享</nuxt-link>
+        <nuxt-link to="/joinus">我要分享</nuxt-link>
     </div>
     <div :class="$style.container_bottom">
         <div>
