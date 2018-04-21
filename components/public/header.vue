@@ -10,7 +10,7 @@
      <nuxt-link to="/about">开发场景</nuxt-link>
      <!-- <nuxt-link to="/about">情报局</nuxt-link>
      <nuxt-link to="/about">新版发布</nuxt-link> -->
-     <nuxt-link to="/about">前端TOP50</nuxt-link>
+     <nuxt-link to="/rank">前端TOP50</nuxt-link>
    </nav>
    <div :class="$style.searchFather">
       <input :class="$style.searchText" type="text" placeholder="搜索前端库">
