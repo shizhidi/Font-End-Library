@@ -130,6 +130,9 @@ a {
     }
 }
 
+.menuActive {
+  color: #DA552F!important;
+}
 .clearfix:after {
     display: block;
     clear: both;
@@ -151,4 +154,11 @@ a {
 
 .twitter {
     color: #1AB2E8;
+}
+
+.headMenu {
+  height: 120px!important;
+  @media screen and (max-width: 500px) {
+    height: 316px!important;
+  }
 }

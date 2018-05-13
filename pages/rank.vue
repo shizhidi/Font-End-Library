@@ -3,8 +3,8 @@
    <div>
     <h2>前端 TOP 50</h2>
     <div :class="$style.container_btn">
-      <Btn :class="[$style.hot,$style.active]"><icon name="submit" :scale="3"></icon><span>热门</span></Btn>
-      <Btn :class="$style.trend"><icon name="submit" :scale="3"></icon><span>趋势</span></Btn>
+      <Btn :class="[$style.hot,$style.active]"><icon name="hot" :scale="3"></icon><span>热门</span></Btn>
+      <Btn :class="$style.trend"><icon name="trend" :scale="3"></icon><span>趋势</span></Btn>
     </div>
     <div :class="$style.TopOne">
       <nuxt-link to="/"><img src="https://awesomes.oss-cn-beijing.aliyuncs.com/repo/1521032852550-1-1689.png?x-oss-process=style/subject_repo" alt=""><h6>tabler</h6></nuxt-link>
@@ -53,8 +53,7 @@ export default {
 </script>
 <style lang='scss' module>
 .container {
-  padding-top: 120px;
-  background-color: #fff;
+  padding: 120px 0 40px 0;
   div {
     width: 770px;
     margin: 0 auto;
@@ -74,15 +73,20 @@ export default {
         padding: 8px 16px;
         color: #000;
         background-color: transparent;
-        border: 1px solid #78a296;
+        border: 1px solid #000;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
         svg, span {
           vertical-align: middle;
           padding: 0 3px;
         }
       }
       .active {
-        color: #5BC7A7;
-        background-color: #000000;
+        border-color: #DA552F;
+        color: #DA552F;
+        background-color: #fff;
       }
     }
     .TopOne {
@@ -108,6 +112,7 @@ export default {
       }
     }
     ul {
+      background-color: #fff;
       li {
         height: 104px;
         line-height: 104px;

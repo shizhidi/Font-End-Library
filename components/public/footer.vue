@@ -19,7 +19,7 @@
     </section>
     <aside>
       <div>
-        <a href="javascript:void(0)">关于</a>  
+        <a href="javascript:void(0)">关于</a>
         <a href="javascript:void(0)">友情链接</a>
         <a href="javascript:void(0)">联系我们</a>
         <a href="javascript:void(0)">信息无障碍文档共享</a>
@@ -37,9 +37,19 @@
     color: #8f9eb1;
     background-color: #334259;
     padding-top: 32px;
+    @media screen and (max-width: 970px) {
+      height: 170px;
+      padding-top: 0px;
+    }
     section {
       float: left;
       margin-left: 120px;
+      @media screen and (max-width: 970px) {
+        padding: 20px 0px;
+      }
+      @media screen and (max-width: 576px) {
+        margin-left: 3%;
+      }
       div {
         padding-top: 24px;
         > a {
@@ -60,6 +70,9 @@
     aside {
       float: right;
       margin-right:130px;
+      @media screen and (max-width: 576px) {
+        margin-right: 3%;
+      }
       > div {
         text-align: right;
         padding-bottom: 20px;

@@ -15,7 +15,7 @@
           </div>
           <div :class="$style.Overview">
             <h4><a href="">JavaScript 版本的 TensorFlow 机器学习框架</a></h4>
-            <p :class="$style.title">tfjs</p>  
+            <p :class="$style.title">tfjs</p>
             <p :class="$style.des">
               <a href="">应用</a> > <a href="">实用工具</a>
             </p>
@@ -27,7 +27,7 @@
           </div>
           <div :class="$style.Overview">
             <h4><a href="">JavaScript 神经网络库</a></h4>
-            <p :class="$style.title">brain.js</p>  
+            <p :class="$style.title">brain.js</p>
             <p :class="$style.des">
               <a href="">应用</a> > <a href="">实用工具</a>
             </p>
@@ -39,7 +39,7 @@
           </div>
           <div :class="$style.Overview">
             <h4><a href="">高亮输入文本段的 Vue 组件</a></h4>
-            <p :class="$style.title">vue-highlightable-input</p>  
+            <p :class="$style.title">vue-highlightable-input</p>
             <p :class="$style.des">
               <a href="">表单</a> > <a href="">表单美化</a>
             </p>
@@ -51,7 +51,7 @@
           </div>
           <div :class="$style.Overview">
             <h4><a href="">一个类似 EasyUI 的 Vue 后台管理面板方案</a></h4>
-            <p :class="$style.title">avue</p>  
+            <p :class="$style.title">avue</p>
             <p :class="$style.des">
               <a href="">Dom</a> > <a href="">控制面板</a>
             </p>
@@ -269,10 +269,19 @@ export default {
   font-size: 16px;
   margin: 0 auto;
   width: 968px;
+  @media screen and (max-width: 970px) {
+    width: 636px;
+  }
+  @media screen and (max-width: 576px) {
+    width: 380px;
+  }
   > article {
     float: left;
     width: 636px;
     padding:0 30px 100px 0;
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
     .webSearch {
       background-color: white;
       position: relative;
@@ -280,7 +289,7 @@ export default {
         border: 0;
         text-indent: 28px;
         height: 86px;
-        width: 636px;
+        width: 100%;
         font-size: 16px;
       }
       .searchIcon {
@@ -289,15 +298,18 @@ export default {
         right: 8px;
         color: #987a62;
       }
+      @media screen and (max-width: 970px) {
+        display: none;
+      }
     }
     .slider {
-      width: 636px;
+      width: 100%;
       height: 300px!important;
       margin-top: 12px;
       position: relative;
       overflow: hidden;
       .swiper {
-        width: 636px;
+        width: 100%;
         height: 300px!important;
       }
       h4 {
@@ -310,6 +322,9 @@ export default {
       }
       img {
         width: 636px;
+        @media screen and (max-width: 576px) {
+          width: 380px;
+        }
       }
     }
     .homeList {
@@ -318,14 +333,14 @@ export default {
       li {
        position: relative;
        height:140px;
-       border-bottom: 1px solid #F5F5F5; 
+       border-bottom: 1px solid #F5F5F5;
       }
       li > div{
         display: inline-block;
       }
       li .img {
         position:absolute;
-        left:20px;    
+        left:20px;
         top:50%;
         transform: translateY(-50%);
         img {
@@ -335,7 +350,7 @@ export default {
       }
       li .Overview {
         position:absolute;
-        left:100px;    
+        left:100px;
         top:50%;
         transform: translateY(-50%);
         h4 a{
@@ -347,7 +362,7 @@ export default {
         }
         .des {
           font-size: 12px;
- 
+
         }
         p {
           padding-top: 14px;
@@ -358,6 +373,12 @@ export default {
   > aside {
     float: left;
     width: 302px;
+    @media screen and (max-width: 970px) {
+      width: 636px;
+    }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
     .Powerful {
       h4 {
         text-align: left;
@@ -399,6 +420,12 @@ export default {
           line-height: 40px;
           border-radius: 40px;
           border: 1px solid #7b767659;
+          @media screen and (max-width: 970px) {
+            margin-right: 70px;
+          }
+          @media screen and (max-width: 576px) {
+            margin-right: 26px;
+          }
           img {
             width: 30px;
             height: 30px;
@@ -433,7 +460,7 @@ export default {
         svg:hover {
           color: #DA552F;
         }
-      } 
+      }
       a {
         left: 64px;
       }
@@ -451,7 +478,7 @@ export default {
         background-color: #fff;
         .FrontImg {
           @include vertical-center();
-          left: 20px; 
+          left: 20px;
         }
         .FrontText {
           @include vertical-center();
@@ -512,7 +539,7 @@ export default {
             vertical-align: middle;
             width: 25px;
             height: 25px;
-            border-radius: 25px; 
+            border-radius: 25px;
           }
           .icon img {
             display: inline-block;
@@ -560,10 +587,14 @@ export default {
           width: 242px;
           height: 90px;
           line-height: 90px;
-          margin-bottom: 20px;
+          margin: 0 auto 20px;
           font-size: 16px;
           background-size: cover;
           background-position: left top -18px;
+          @media screen and (max-width: 970px) {
+            width: 100%;
+            background-position: left top -100px;
+          }
         }
         li a {
           display: inline-block;
@@ -603,12 +634,13 @@ export default {
       }
       > ul{
         padding: 18px 0;
-      } 
+      }
       li {
         height: 60px;
         position: relative;
         line-height: 60px;
         font-size: 13px;
+        text-align: left;
         > a {
           padding-left: 20px;
         }
@@ -622,8 +654,8 @@ export default {
           padding-left: 10px;
           text-align: left;
           width: 146px;
-          overflow: hidden; 
-          
+          overflow: hidden;
+
           @include vertical-center();
           h5 {
             height: 26px;
@@ -666,6 +698,11 @@ export default {
         vertical-align: middle;
         padding: 8px 26px 0 26px;
         box-sizing: border-box;
+        @media screen and (max-width: 970px) {
+          display:block;
+          background-position: left top -100px;
+          padding: 20px 26px;
+        }
       }
       ul li {
         width: 40px;
@@ -673,6 +710,12 @@ export default {
         text-align: center;
         display: inline-block;
         font-size: 13px;
+        @media screen and (max-width: 970px) {
+          padding: 0 36px;
+        }
+        @media screen and (max-width: 576px) {
+          padding: 0 12px;
+        }
         span {
           display: inline-block;
           padding-top: 10px;
